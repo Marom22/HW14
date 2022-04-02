@@ -1,3 +1,5 @@
+# Install ZIP & VIM:
+
 - name: install zip
   become: true
   become_method: sudo
@@ -6,4 +8,4 @@
     - zip
     
 - name: install vim
-  
+  apt: name=vim state=present
