@@ -1,1 +1,4 @@
+# Playbook
 
+- name: call common role
+  import_tasks: main.yml
