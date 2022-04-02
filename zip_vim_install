@@ -1,0 +1,9 @@
+- name: install zip
+  become: true
+  become_method: sudo
+  apt: name={{ item }} state=present
+  with_items:
+    - zip
+    
+- name: install vim
+  
